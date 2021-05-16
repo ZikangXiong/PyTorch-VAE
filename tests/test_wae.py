@@ -7,7 +7,7 @@ from torchsummary import summary
 class TestWAE(unittest.TestCase):
 
     def setUp(self) -> None:
-        self.model = WAE_MMD(3, 10, reg_weight = 100)
+        self.model = WAE_MMD(3, 10, reg_weight=100)
 
     def test_summary(self):
         print(summary(self.model, (3, 64, 64), device='cpu'))

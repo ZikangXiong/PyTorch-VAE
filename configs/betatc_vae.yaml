@@ -4,7 +4,7 @@ model_params:
   latent_dim: 10
   anneal_steps: 10000
   alpha: 1.
-  beta:  6.
+  beta: 6.
   gamma: 1.
 
 exp_params:

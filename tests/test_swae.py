@@ -7,7 +7,7 @@ from torchsummary import summary
 class TestSWAE(unittest.TestCase):
 
     def setUp(self) -> None:
-        self.model = SWAE(3, 10, reg_weight = 100)
+        self.model = SWAE(3, 10, reg_weight=100)
 
     def test_summary(self):
         print(summary(self.model, (3, 64, 64), device='cpu'))

@@ -19,8 +19,8 @@ class TestCVAE(unittest.TestCase):
     def test_loss(self):
         x = torch.randn(16, 3, 64, 64)
         c = torch.randn(16, 40)
-        result = self.model(x, labels = c)
-        loss = self.model.loss_function(*result, M_N = 0.005)
+        result = self.model(x, labels=c)
+        loss = self.model.loss_function(*result, M_N=0.005)
         print(loss)
 
 
